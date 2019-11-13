@@ -1,0 +1,7 @@
+@import "infinite.scss";
+
+.fxOpacityPulse {
+    animation: opacityPulse 2s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 1;
+}

@@ -1,0 +1,22 @@
+#tab-settings {
+
+    table {
+        tr {
+            td:first-child {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .settings-section {
+
+        background-color:rgba(0, 100, 255, 0.1);
+        border: 1px dotted black;
+        padding: 0 16px 16px 16px;
+        margin-bottom: 20px;
+
+        p.description {
+            margin-bottom: 15px;
+        }
+    }
+}

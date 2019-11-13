@@ -1,0 +1,27 @@
+.rss-feed {
+	display: block;
+	font-family: sans-serif;
+	background-color: #f2f2f2;
+	color: #222222;
+	font-size: 13px;
+	margin-top: 30px;
+
+    .feed-item {
+
+        background-color: #ffffff;
+        border: 1px solid #d8d8d8;
+        padding: 10px;
+        margin-bottom: 15px;
+
+        .item-title {
+            color: #00579B;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .item-description {
+			font-size: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+div.tracking-url-block {
+
+    h2 {
+        margin-top: 8px;
+    }
+
+    .logged-in-warning {
+        font-size: 120%;
+        font-weight: bold;
+        color: #cc0000;
+    }
+
+    .sources-form {
+
+        .source-details-table {
+
+            padding-top: 8px;
+
+            td {
+                padding: 0px 8px 0px 0px;
+            }
+
+            input[type=text] {
+                max-width: 150px;
+            }
+
+            input[type=button] {
+
+                &.save-source {
+
+                    margin-top: 8px;
+                }
+            }
+
+            tfoot {
+                td {
+                    padding-top: 10px;
+
+                    label.confirmation-message {
+                        position: relative;
+                        top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+

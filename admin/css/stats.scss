@@ -1,0 +1,19 @@
+.suspicious-traffic-bar {
+    display:inline-block;
+    width: 60px;
+    height: 8px;
+    border: 1px solid #111;
+    background-color: #f9f9f9;
+
+    div {
+        height: 100%;
+        color: #fff;
+        text-align: right;
+        line-height: 8px; /* same as #progressBar height if we want text middle aligned */
+        background-color: #ff8821;
+    }
+
+    span {
+        display: none;
+    }
+}

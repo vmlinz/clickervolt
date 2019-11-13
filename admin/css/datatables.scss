@@ -1,0 +1,12 @@
+div.dt-buttons {
+
+    float: right;
+    margin-right: 20px;
+
+    button {
+
+        &.dt-button {
+            background-color: white !important;
+        }
+    }
+}

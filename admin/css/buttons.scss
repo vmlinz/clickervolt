@@ -1,0 +1,37 @@
+
+.ui-accordion {
+
+    .button {
+        
+        &.ui-state-active {
+
+            border-color: #f7f7f7;
+            background-color: #ccc;
+
+            &.focus, &:focus {
+
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.button {
+
+    @extend .unselectable;
+
+    &.green {
+
+        background-color: #7db944;
+        border-top-color: rgb(0, 170, 115);
+        border-bottom-color: rgb(0, 153, 103);
+        border-right-color: rgb(0, 153, 103);
+        border-left-color: rgb(0, 153, 103);
+        box-shadow: rgb(0, 153, 103) 0px 1px 0px 0px;
+    }
+
+    &.button-calendar {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}

@@ -1,0 +1,81 @@
+.tabs-wrapper {
+
+    display: none;
+    margin-top: 25px;
+
+    ul.tabs{
+
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        li {
+
+            @extend .unselectable;
+
+            background: none;
+            color: #222;
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0px;
+
+            &.current {
+                background-color: #d0e0f0;
+                color: #222;
+            }
+
+            &:not(.current):hover {
+                background-color: #eaeaea;
+            }
+            
+            &.right {
+                float: right;
+            }
+        }
+    }
+
+    .tab-content{
+        display: none;
+        border-top: 3px solid #e0e0e0;
+        padding: 15px;
+
+        &.current {
+            display: inherit;
+        }
+    }
+}
+
+#tabs-for-stats {
+
+    ul.tabs {
+        .material-icons {
+
+            font-size: 18px;
+            line-height: 10px;
+            color: #555;
+        
+            &.links {
+                &::before { content: 'view_list'; }
+            }
+
+            &.reports {
+                &::before { content: 'bar_chart'; }
+            }
+
+            &.live-clicks {
+                &::before { content: 'cached'; }
+            }
+
+            &.settings {
+                &::before { content: 'settings'; }
+            }
+
+            &.latest-news{
+                &::before { content: 'rss_feed'; }
+            }
+        }
+    }
+}

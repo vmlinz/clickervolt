@@ -1,0 +1,27 @@
+td.treegrid-control, td.treegrid-control-open {
+
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+span.tree-icon {
+
+    @extend i.material-icons;
+    @extend .unselectable;
+
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+
+    &.expand {
+        &::before {
+            content: 'expand_more'
+        }
+    }
+
+    &.collapse {
+        &::before {
+            content: 'expand_less'
+        }
+    }
+}

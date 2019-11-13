@@ -1,0 +1,163 @@
+.clickervolt-section-dashboard {
+
+    padding-top: 10px;
+
+    #options-accordion {
+        display: inline;
+    }
+
+    #clickervolt-logo {
+        background-image: url(../images/logo100x29.png?v=2);
+        background-repeat: no-repeat;
+        background-size: 100px 29px;
+        width: 100px;
+        height: 29px;
+        float: right;
+        margin-right: 20px;
+        opacity: 1.0;
+    }
+
+    input.daterange {
+        margin-left: 8px;
+        background-color: white !important;
+    }
+
+    #reports-header {
+
+        button.stat-button {
+            @extend .unselectable;
+        }
+
+        #segments-and-controls {
+
+            padding-bottom: 12px;
+
+            .segment-selects {
+                padding-top: 8px;
+
+                .select2-container {
+                    margin-top: 4px;
+                }
+
+                .segment-filters {
+
+                    margin-right: 12px;
+                    
+                    .segment-filter {
+                        &.select2-container {
+                            min-width: 30px;
+
+                            .select2-selection {
+                                background-color: palegoldenrod;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.stats-table-toolbar {
+        display: inline;
+    }
+
+    #datatables-links {
+
+        td.grouping {
+            
+            div.grouping-cell {
+                display: table-row;
+                width: 100%;
+                
+                span.grouping-name {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                
+                span.grouping-actions {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: right;
+                    width: 100%;
+                    padding: 0 4px 0 8px;
+
+                    i.stats-row {
+
+                        padding: 0;
+                        cursor: pointer;
+                        color: rgba(0, 0, 0, 0.5); 
+            
+                        &:hover {
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #datatables-links, #datatables-reports {
+
+        tbody {
+            tr {
+                &:hover {
+                    background-color: rgba(253, 246, 213, 0.8) !important;
+                }
+
+                td {
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+
+                    .stats-segment-hint {
+                        color: #bbb;
+                    }
+
+                    .stats-ctr-hint {
+                        color: #bbb;
+                        float: left;                        
+                    }
+                }
+            }
+        }
+    }
+
+    #datatables-clicklog {
+
+        tr {
+            vertical-align: middle;
+
+            td.user-data-icons {
+
+                span.countries, span.browser, span.os {
+                    img {
+                        padding-left: 4px;
+                        display: inline-block;
+                        position: relative;
+                        top: 3px;
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+
+                span.countries {
+                    img {
+                        width: 21px !important;
+                        height: 16px !important;
+                        top: 2px !important;
+                    }
+                }
+
+                i.material-icons {
+                    &.url {
+                        font-size: 16px;
+                        line-height: 14px;
+                    }
+
+                    &.returning-visitor {
+                        &::before { content: 'transfer_within_a_station'; }
+                    }            
+                }
+            }
+        }
+    }
+}
